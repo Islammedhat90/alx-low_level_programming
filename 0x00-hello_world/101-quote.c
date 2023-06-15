@@ -7,9 +7,9 @@
 int main(void)
 {
 	char sentence[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-	int len = strlen(sentence);
+	int size = sizeof(sentence);
 
-	for (int i = 0; i < len; i++)
+	for (int i = 0; i < size; i++)
 	{
 		putchar(str[i]);
 	}
