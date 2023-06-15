@@ -8,11 +8,11 @@ int main(void)
 {
 	char sentence[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 	int size = sizeof(sentence);
-	int i = 0;
-	for (i; i < size; i++)
+	int i;
+	for (i = 0; i < size; i++)
 	{
 		putchar(sentence[i]);
 	}
-	putchar('\n);
+	putchar('\n');
 	return (0);
 }
