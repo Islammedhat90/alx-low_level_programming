@@ -13,5 +13,6 @@ int main(void)
 	{
 		putchar(sentence[i]);
 	}
+	putchar('\n');
 	return (1);
 }
