@@ -9,9 +9,9 @@ int main(void)
 	char sentence[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 	int size = sizeof(sentence);
 	int i = 0;
-	for (i; i < len; i++)
+	for (i; i < size; i++)
 	{
-		putchar(str[i]);
+		putchar(sentence[i]);
 	}
 	putchar('\n);
 	return (0);
