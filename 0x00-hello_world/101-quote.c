@@ -2,7 +2,7 @@
 /*
  * main - program that prints exactly and that piece of art is useful
  *
- * Return: 0 (success)
+ * Return: 1 (success)
  */
 int main(void)
 {
@@ -13,5 +13,5 @@ int main(void)
 	{
 		putchar(sentence[i]);
 	}
-	return (0);
+	return (1);
 }
