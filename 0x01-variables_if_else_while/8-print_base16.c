@@ -15,7 +15,7 @@ int main(void)
 		putchar(c);
 		if (c == '9')
 		{
-			c = '141';
+			c = 'a';
 			continue;
 		}
 		c++;
