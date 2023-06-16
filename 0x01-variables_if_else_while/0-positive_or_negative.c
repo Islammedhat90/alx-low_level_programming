@@ -24,4 +24,4 @@ int main(void)
 	else
 		printf("%i is zero", n);
 	return (0);
-i
+}
