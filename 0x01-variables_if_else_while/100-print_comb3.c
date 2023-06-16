@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	int i = 0;
-	int j = 0;
+	int i;
+	int j;
 
-	for (i; i < 10; i++)
+	for (i = 0; i < 10; i++)
 	{
-		for (j; j < 10; j++)
+		for (j = 0; j < 10; j++)
 		{
 			if (i == j || j < i)
 				continue;
