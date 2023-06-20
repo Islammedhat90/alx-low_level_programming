@@ -9,16 +9,16 @@
 int main(void)
 {
 	int count = 2;
-	int i = 1;
-	int j = 2;
+	long i = 1;
+	long j = 2;
 
-	printf("%i, %i, ", i, j);
+	printf("%lu, %lu, ", i, j);
 	while (count != 50)
 	{
-		int new = i + j;
+		long new = i + j;
 		i = j;
 		j = new;
-		printf("%i, ", new);
+		printf("%lu, ", new);
 		count++;
 	}
 	return (0);
