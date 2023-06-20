@@ -11,23 +11,3 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 
-
-
-
-
-
-
-
-
-
-void print_alphabet(void)
-{
-	char a = 'a';
-
-	while (a <= 'z')
-	{
-		_putchar(a);
-		a++;
-	}
-	_putchar('\n');
-}
