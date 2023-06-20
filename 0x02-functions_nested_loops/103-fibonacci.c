@@ -10,8 +10,8 @@
 int main(void)
 {
 	long sum = 2;
-	long i;
-	long j;
+	long i = 1;
+	long j = 2;
 
 	while (i + j < 4000000)
 	{
