@@ -18,6 +18,9 @@ int main(void)
 		long new = i + j;
 		i = j;
 		j = new;
+		if (count = 49)
+			printf("%lu\n", new);
+		else
 		printf("%lu, ", new);
 		count++;
 	}
