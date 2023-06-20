@@ -9,13 +9,13 @@
 int main(void)
 {
 	int count = 2;
-	long i = 1;
-	long j = 2;
+	unsigned long i = 1;
+	unsigned long j = 2;
 
 	printf("1, 2, ");
 	while (count != 98)
 	{
-		long new = i + j;
+		unsigned long new = i + j;
 
 		i = j;
 		j = new;
