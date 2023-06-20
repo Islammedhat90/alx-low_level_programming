@@ -1,4 +1,3 @@
-#include <limits.h>
 #include "main.h"
 
 /**
@@ -11,9 +10,7 @@
 
 int _isalpha(int c)
 {
-	if (_islower(c) == 1)
-		return (1);
-	if (c >= 65 && c <= 90)
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 		return (1);
 	return (0);
 }
