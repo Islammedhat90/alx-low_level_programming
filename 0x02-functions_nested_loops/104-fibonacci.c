@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdint.h>
 
 /**
   * main - firt 98 fibonacci numbers
@@ -9,21 +10,21 @@
 int main(void)
 {
 	int count = 2;
-	unsigned long i = 1;
-	unsigned long j = 2;
+	uint64_t i = 1;
+	uint64_t j = 2;
 
 	printf("1, 2, ");
 	while (count != 98)
 	{
-		unsigned long new = i + j;
+		uint64_t new = i + j;
 
 		i = j;
 		j = new;
 		if (count == 97)
-			printf("%li\n", new);
+			printf("%lu\n", new);
 		else
 		{
-			printf("%li, ", new);
+			printf("%lu, ", new);
 		}
 		count++;
 	}
