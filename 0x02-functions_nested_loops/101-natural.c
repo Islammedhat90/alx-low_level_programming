@@ -3,7 +3,7 @@
 /**
   * main - print sum of all the multiples of 3 or 5 below 1024.
   *
-  * Return: sum of numbers.
+  * Return: 0 (success)
   */
 
 int main(void)
@@ -16,6 +16,7 @@ int main(void)
 		if (((i % 3) == 0) || ((i % 5) == 0))
 			sum = sum + i;
 	}
-	printf("%i""\n", sum);
-	return (sum);
+	printf("%i", sum);
+	putchar('\n');
+	return (0);
 }
