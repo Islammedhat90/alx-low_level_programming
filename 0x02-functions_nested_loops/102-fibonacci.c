@@ -16,6 +16,7 @@ int main(void)
 	while (count != 50)
 	{
 		long new = i + j;
+
 		i = j;
 		j = new;
 		if (count == 49)
