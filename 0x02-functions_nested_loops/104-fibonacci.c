@@ -10,13 +10,13 @@
 int main(void)
 {
 	int count = 2;
-	uint64_t i = 1;
-	uint64_t j = 2;
+	int64_t i = 1;
+	int64_t j = 2;
 
 	printf("1, 2, ");
 	while (count != 98)
 	{
-		uint64_t new = i + j;
+		int64_t new = i + j;
 
 		i = j;
 		j = new;
