@@ -25,8 +25,8 @@ int main(void)
 		else
 		{
 			printf("%li, ", new);
-			count++;
 		}
+		count++;
 	}
 	return (0);
 }
