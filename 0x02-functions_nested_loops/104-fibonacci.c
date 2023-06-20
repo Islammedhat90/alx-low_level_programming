@@ -19,7 +19,6 @@ int main(void)
 
 		i = j;
 		j = new;
-		printf("%li, ", new);
 		if (count == 97)
 			printf("%li\n", new);
 		else
