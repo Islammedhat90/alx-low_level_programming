@@ -3,7 +3,7 @@
 
 /**
   * main - firt 98 fibonacci numbers
-  * 
+  *
   * Return: 0 (Success)
   */
 
