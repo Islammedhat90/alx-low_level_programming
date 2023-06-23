@@ -31,6 +31,6 @@ int main(void)
 			printf("%i ", i);
 		}
 	}
-	putchar(' ');
+	putchar('\n');
 	return (0);
 }
