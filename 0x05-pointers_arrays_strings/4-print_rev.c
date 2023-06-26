@@ -4,7 +4,7 @@
 /**
   * print_rev - Prints a string in reverse
   * @s: The string to pirint
-  * 
+  *
   * Return: void
   */
 void print_rev(char *s)
@@ -23,7 +23,7 @@ void print_rev(char *s)
 /**
   * _strlen - the length of a string
   * @s: string to get length
-  * 
+  *
   * Return: returns length of string
   */
 
