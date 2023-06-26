@@ -5,8 +5,6 @@
   * print_rev - Prints a string in reverse
   * @s: The string to pirint
   * 
-  * _strlen - Returns the length of a string
-  * @s: string to get length
   * Return: void
   */
 void print_rev(char *s)
@@ -21,6 +19,13 @@ void print_rev(char *s)
 	}
 	_putchar('\n');
 }
+
+/**
+  * _strlen - the length of a string
+  * @s: string to get length
+  * 
+  * Return: returns length of string
+  */
 
 int _strlen(char *s)
 {
