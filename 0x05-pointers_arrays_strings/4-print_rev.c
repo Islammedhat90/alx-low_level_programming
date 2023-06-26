@@ -18,3 +18,12 @@ void print_rev(char *s)
 	}
 	_putchar('\n');
 }
+
+int _strlen(char *s)
+{
+	int length = 0;
+
+	while (*(s + length) != '\0')
+		length++;
+	return (length);
+}
