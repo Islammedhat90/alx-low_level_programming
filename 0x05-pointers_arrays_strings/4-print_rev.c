@@ -4,14 +4,15 @@
 /**
   * print_rev - Prints a string in reverse
   * @s: The string to pirint
+  * _strlen - Returns the length of a string
   *
   * Return: void
   */
 void print_rev(char *s)
 {
 	int length = _strlen(s);
-	length = length - 1;
 
+	length = length - 1;
 	while (length >= 0)
 	{
 		_putchar(s[length]);
