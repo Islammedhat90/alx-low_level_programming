@@ -12,7 +12,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 	int i, j;
-	unsigned int n = 0;
+	int n = 0;
 	int len = _strlen(needle);
 	char *t = haystack;
 
@@ -20,11 +20,12 @@ char *_strstr(char *haystack, char *needle)
 	{
 		for (j = 0; haystack[j] != '\0'; j++)
 		{
+			int x = i + 1;
+			int y = j + 1;
+
 			if (needle[i] == haystack[j])
 			{
 				n++;
-				int x = i + 1;
-				int y = j + 1;
 
 				t = &haystack[j];
 
