@@ -15,7 +15,7 @@ int pali_checker(char *s, int i, int j)
 	if (i == 0 && s[0] == s[j])
 		return 1;
 	if (s[i] == s[j])
-		return (pali_checker(*s, i - 1, j + 1));
+		return (pali_checker(s, i - 1, j + 1));
 	else
 		return (0);
 }
