@@ -14,7 +14,7 @@ int primechecker(int n, int i)
 	else if (n % i == 0)
 		return (0);
 	else
-		return (primechecker(n, i--));
+		return (primechecker(n, i - 1));
 }
 /**
  * is_prime_number - that returns  if the input integer is a prime number.
