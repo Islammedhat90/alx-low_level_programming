@@ -11,6 +11,44 @@
 
 int coincalc(int pay)
 {
+	int coins = 0;
+
+	while (pay != 0)
+	{
+		printf("%i\n", pay);
+		if (pay >= 25)
+		{
+			pay = pay - 25;
+			coins++;
+			continue;
+		}
+		else if (pay >= 10)
+		{
+			pay = pay - 10;
+			coins++;
+			continue;
+		}
+		else if (pay >= 5)
+		{
+			pay = pay - 5;
+			coins++;
+			continue;
+		}
+		else if (pay >= 2)
+		{
+			pay = pay - 2;
+			coins++;
+			continue;
+		}
+		else
+		{
+			pay = pay - 1;
+			coins++;
+			continue;
+		}
+	}
+	return (coins);
+}
 
 
 /**
@@ -30,38 +68,8 @@ int main(__attribute__((unused))int argc, char **argv)
 	else
 	{
 		int pay = atoi(argv[1]);
-		int coins = 0;
+		int coins = coincalc(pay);
 
-		while (pay != 0)
-		{
-			if (pay >= 25) 
-			{
-				pay = pay - 25;
-				continue;
-			}
-			else if (pay >= 10)
-			{
-				pay = pay - 10;
-				continue;
-			}
-			else if (pay >= 5)
-			{
-				pay = pay - 5;
-				continue;
-			}
-			else if (pay >= 2)
-			{
-
-				pay = pay - 2;
-				continue;
-			}
-			else
-			{
-				pay = pay - 1;
-				continue;
-			}
-			coins++;
-		}
 		printf("%i\n", coins);
 	}
 	return (0);
