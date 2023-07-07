@@ -69,6 +69,7 @@ int main(__attribute__((unused))int argc, char **argv)
 	else if (pay < 0)
 	{
 		printf("0\n");
+		return (1);
 	}
 	else
 	{
