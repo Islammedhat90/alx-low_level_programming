@@ -57,7 +57,7 @@ int coincalc(int pay)
   * Return: 0 if successful.
   */
 
-int main(__attribute__((unused))int argc, char **argv)
+int main(int argc, char **argv)
 {
 	int pay = atoi(argv[1]);
 
