@@ -15,7 +15,6 @@ int coincalc(int pay)
 
 	while (pay != 0)
 	{
-		printf("%i\n", pay);
 		if (pay >= 25)
 		{
 			pay = pay - 25;
@@ -60,14 +59,19 @@ int coincalc(int pay)
 
 int main(__attribute__((unused))int argc, char **argv)
 {
+	int pay = atoi(argv[1]);
+
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	else if (pay < 0)
+	{
+		printf("0\n");
+	}
 	else
 	{
-		int pay = atoi(argv[1]);
 		int coins = coincalc(pay);
 
 		printf("%i\n", coins);
