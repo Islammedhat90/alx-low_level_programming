@@ -59,23 +59,27 @@ int coincalc(int pay)
 
 int main(int argc, char **argv)
 {
-	int pay = atoi(argv[1]);
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else if (pay < 0)
-	{
-		printf("0\n");
-		return (1);
-	}
 	else
 	{
-		int coins = coincalc(pay);
+		int pay = atoi(argv[1]);
 
-		printf("%i\n", coins);
+		if (pay < 0)
+		{
+			printf("0\n");
+			return (1);
+		}
+		else
+		{
+			int coins = coincalc(pay);
+			
+			printf("%i\n", coins);
+		}
 	}
 	return (0);
 }
