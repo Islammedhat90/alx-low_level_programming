@@ -1,5 +1,4 @@
 #include "main.h"
-#include "strlen.c"
 /**
  * _strchr - function that locates a character in a string
  *@s: string
