@@ -77,7 +77,7 @@ int main(int argc, char **argv)
 		else
 		{
 			int coins = coincalc(pay);
-			
+
 			printf("%i\n", coins);
 		}
 	}
