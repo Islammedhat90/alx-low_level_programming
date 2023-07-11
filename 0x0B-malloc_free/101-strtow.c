@@ -77,6 +77,8 @@ char **strtow(char *str)
 	char **s;
 	int index = 0;
 
+	if (words == 0)
+		return (NULL);
 	if (str == NULL || (strcmp(str, "") == 0))
 		return (NULL);
 	s = malloc((words + 1) * sizeof(char *));
