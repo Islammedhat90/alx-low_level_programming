@@ -110,6 +110,5 @@ char **strtow(char *str)
 		}
 	}
 	free(letters);
-	free(words);
 	return (s);
 }
