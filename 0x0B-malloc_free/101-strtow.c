@@ -72,18 +72,18 @@ char **strtow(char *str)
 {
 	int *letters = lettercount(str);
 	int words = wordcount(str);
-	int size = strlen(str);
 	int i;
 	int j;
 	char **s;
 	int index = 0;
+
 	if (str == NULL || (strcmp(str, "") == 0))
 		return (NULL);
 	s = malloc((words + 1) * sizeof(char *));
 
 	for (i = 0; i < words; i++)
 	{
-		s[i] = malloc((letters[i] + 1) * sizeof(char));
+		s[i] = (char *)malloc((letters[i] + 1) * sizeof(char));
 		if (s[i] == NULL)
 		{
 			for (; i >= 0; i--)
@@ -91,22 +91,23 @@ char **strtow(char *str)
 			free(s);
 			return (NULL);
 		}
-		for (j = index; j < size; j++)
+		for (j = 0; j < letters[i]; j++)
 		{
-			if (str[j] != ' ')
+			if (str[index] != ' ')
 			{
-				s[i][j - index] = str[j];
-
-				if (str[j + 1] == ' ' || str[j + 1] == '\0')
+				s[i][j] = str[index];
+				if (str[index + 1] == ' ' || str[index + 1] == '\0')
 				{
-					s[i][j - index] = '\0';
+					s[i][j + 1] = '\0';
+					index++;
 					break;
 				}
+				index++;
 				continue;
 			}
-			continue;
+			j = -1;
+			index++;
 		}
 	}
-	s[words] = NULL;
 	return (s);
 }
