@@ -58,7 +58,6 @@ int *lettercount(char *str)
 			}
 		}
 	}
-	free(letters);
 	return (letters);
 }
 
