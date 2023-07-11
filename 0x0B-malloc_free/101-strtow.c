@@ -38,7 +38,7 @@ int *lettercount(char *str)
 	int i;
 	int let = 0;
 	int j = 0;
-	int *letters = malloc(words * sizeof(int) - 2);
+	int *letters = malloc(words * sizeof(int));
 
 	if (letters == NULL)
 	{
@@ -58,6 +58,7 @@ int *lettercount(char *str)
 			}
 		}
 	}
+	free(letters);
 	return (letters);
 }
 
