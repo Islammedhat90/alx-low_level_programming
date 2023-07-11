@@ -1,61 +1,43 @@
-#include "main.h"
-#include <string.h>
-#include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 
 /**
-  * strtow - function that splits a string into words.
-  *@str: string to split.
-  *
-  * Return: NULL if fails, otherwise pointer.
-  */
+* **strtow - function that splits a string into words.
+* @str : pointer
+* Return: Char
+*/
 
 char **strtow(char *str)
 {
-	char **s;
+	char **d;
 	int i;
 	int j = 0;
-	int words = 0;
-	int *letters;
-	int len = 0;
+	int con = 0;
 
-	if (str == NULL || str == "")
+	if (str == NULL)
 		return (NULL);
-	for (i = 0; i < strlen(str); i++)
+
+	for (i = 0 ; str[i] != '\0' ; i++)
 	{
-		if (str[i] != ' ')
+		if (str[i] != 32)
+			con++;
+	}
+
+	d = malloc(sizeof(char) * con);
+
+	if (d == NULL)
+		return (NULL);
+
+	for (i = 0 ; str[i] != '\0' ; i++)
+	{
+		if (str[i] != 32)
 		{
-			len++;
-			if (str[i + 1] == ' ')
-			{
-				len++;
-				words++;
-				letters[j] = len;
-				len = 0;
-			}
+			*d[j] = str[i];
+			j++;
 		}
 		else
 		{
-			str[i] = "";
 		}
 	}
-	s = (char **)malloc(words * sizeof(char *));
-	int x = 0;
-
-	for (i = 0; i < words; i++)
-	{
-		s[i] = malloc(letters[i] * sizeof(char));
-		if(s[i] == NULL)
-		{
-			for (; i >= 0; i--)
-				free(s[i]);
-			return (NULL);
-		}
-		for (j = 0; j <= letters[i]; j++)
-		{
-			x = x + j;
-			s[i][j] = str[x];
-		}
-	}
-	return (s);
+	return (d);
 }
