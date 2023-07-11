@@ -72,10 +72,8 @@ char **strtow(char *str)
 {
 	int *letters = lettercount(str);
 	int words = wordcount(str);
-	int i;
-	int j;
+	int i, j, index = 0;
 	char **s;
-	int index = 0;
 
 	if (words == 0)
 		return (NULL);
@@ -85,7 +83,7 @@ char **strtow(char *str)
 
 	for (i = 0; i < words; i++)
 	{
-		s[i] = (char *)malloc((letters[i] + 1) * sizeof(char));
+		s[i] = (char *)malloc(letters[i] * sizeof(char));
 		if (s[i] == NULL)
 		{
 			for (; i >= 0; i--)
