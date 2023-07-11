@@ -77,11 +77,11 @@ char **strtow(char *str)
 
 	if (str == NULL || (strcmp(str, "") == 0) || words == 0)
 		return (NULL);
-	s = malloc((words) * sizeof(char *) - 1);
+	s = malloc((words) * sizeof(char *) - 2);
 
 	for (i = 0; i < words; i++)
 	{
-		s[i] = malloc((letters[i] - 1) * sizeof(char));
+		s[i] = malloc((letters[i] - 1) * sizeof(char) - 1);
 		if (s[i] == NULL)
 		{
 			for (; i >= 0; i--)
