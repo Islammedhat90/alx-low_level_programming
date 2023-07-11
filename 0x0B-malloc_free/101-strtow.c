@@ -81,9 +81,9 @@ char **strtow(char *str)
 		return (NULL);
 	s = malloc(words * sizeof(char *) + 1);
 
-	for (i = 0; i < words - 1; i++)
+	for (i = 0; i < words; i++)
 	{
-		s[i] = (char *)malloc(letters[i] * sizeof(char));
+		s[i] = (char *)malloc((letters[i] - 1) * sizeof(char));
 		if (s[i] == NULL)
 		{
 			for (; i >= 0; i--)
