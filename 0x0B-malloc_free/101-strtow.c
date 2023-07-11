@@ -109,5 +109,7 @@ char **strtow(char *str)
 			index++;
 		}
 	}
+	free(letters);
+	free(words);
 	return (s);
 }
