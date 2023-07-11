@@ -83,7 +83,7 @@ char **strtow(char *str)
 
 	for (i = 0; i < words; i++)
 	{
-		s[i] = malloc(letters[i] * sizeof(char) - 1);
+		s[i] = malloc(letters[i] * sizeof(char) - 2);
 		if (s[i] == NULL)
 		{
 			for (; i >= 0; i--)
