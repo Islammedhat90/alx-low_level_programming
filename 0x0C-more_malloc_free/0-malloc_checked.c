@@ -7,7 +7,7 @@
   *
   * Return: pointer to memory, 98 if fails.
   */
-void *malloc_checked(unsigned int b);
+void *malloc_checked(unsigned int b)
 {
 	void *a = malloc(b);
 
