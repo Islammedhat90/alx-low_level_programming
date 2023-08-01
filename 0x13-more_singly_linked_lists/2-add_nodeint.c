@@ -3,7 +3,8 @@
 #include "lists.h"
 
 /**
- * add_nodeint_end - function that adds a new node at the beginning of a list_t list
+ * add_nodeint - function that adds a new node at the
+ * beginning of a list_t list
  * @head: pointer of structure list_t
  * @n: int to be added
  * Return: List with new node for list_t list, NULL if failed
