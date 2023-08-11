@@ -1,4 +1,5 @@
 #include "main.h"
+#include "_strlen.c"
 
 /**
  * create_file - creates a file
@@ -14,7 +15,7 @@ int create_file(const char *filename, char *text_content)
 
 	if (filename == NULL)
 		return (-1);
-	fd = open(filename, 0_WRONLY | 0_CREAT | 0_TRUNC, 0600);
+	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 	if (text_content != NULL)
 		l = write(fd, text_content, _strlen(text_content));
 	if (l == -1)
